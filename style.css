@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans", sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  background: #f3f3f3;
+  line-height: 2;
+}
+input {
+  all: unset;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  background: #ffffff;
+  box-shadow: 0 2px 10px -1.3px rgba(0, 0, 0, 0.19);
+  font-size: 14px;
+}
+.list {
+  padding: 8px;
+  border-radius: 0.5rem;
+  background: #fff;
+  position: absolute;
+  width: 223px;
+  transition: 300ms;
+}
+.list.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+ul {
+  list-style: none;
+  z-index: 1000;
+  position: relative;
+  margin-block-start: 0.5rem;
+}
+ul li {
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: 300ms;
+  font-size: 12px;
+}
+ul li:hover,
+ul li.active {
+  background: #f8f8f8;
+  cursor: pointer;
+}
+.container {
+  position: relative;
+  width: 200px;
+}
+.tags {
+  padding: 2ch 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1ch;
+}
+.tag {
+  background: #dde1ee;
+  color: #3e5bc4;
+  border-radius: 100px;
+  padding: 0.5rem 1rem;
+  min-width: 50px;
+  font-size: 12px;
+  width: fit-content;
+  transition: 300ms;
+}
+.tag:hover {
+  background: #f2e1e1;
+  color: #ca3b57;
+  cursor: pointer;
+}
