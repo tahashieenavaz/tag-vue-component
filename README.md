@@ -1,17 +1,22 @@
-# Tag Input || Taha Shieenavaz
+# Tag Input
 
-Tag Input UI component based on the provided design which contains following components:
+A file-based Vue 3 tag input component, built with Vite.
 
- 1. A BaseTextInput component
- 2. A List component
- 3. The TagInput component
+## Local development
 
-# Structure
+```sh
+npm install
+npm run dev
+```
 
-I have used a CDN to pull in Vue.js for the sake of simplicity. 
-https://unpkg.com/vue@3
+Create a production build with `npm run build`. The GitHub Pages workflow builds
+and deploys the `dist` directory whenever a tag matching `v*` is pushed.
 
-# Preview
-My preview is being hosted on my personal web host.
+## Component
 
-https://planetedu.ir/taginput.html
+The reusable component lives at `src/components/TagInput.vue` and supports
+`v-model` for its tags:
+
+```vue
+<TagInput v-model="tags" />
+```
